@@ -5,18 +5,18 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "Hello, \n\nThis is a Telegram Video Compress Bot \n\n<b>Please sent me any Telegram big file I Will compress a small file</b> \n\n/help for more details. \n\nSupport Group: @Linux_Repo"
+    START_TEXT = "<code>Hello,</code> \n\n<code>This is a Telegram Video Compress Bot.</code> \n\n<code>Please sent me any Telegram big file I Will compress a small file</code> \n\nHit /help for more details. \n\nReport bugs to @imjerin"
    
     ABS_TEXT = " Please don't be selfish."
     
     FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
     
     
-    DOWNLOAD_START = "📥 Downloading 📥 \n"
+    DOWNLOAD_START = "<code>📥 Downloading to my local 📥</code> \n"
     
-    UPLOAD_START = "📤 Uploading 📤 \n"
+    UPLOAD_START = "<code>📤 Uploading to Telegram📤</code> \n"
     
-    COMPRESS_START = "📀 Trying to compress ... 📀"
+    COMPRESS_START = "<code>📀Wait, trying to compress... May take some time based on file size. 📀</code>"
     
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     
@@ -42,11 +42,11 @@ class Localisation:
     
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     
-    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "⚠️ Already One Process going on! ⚠️"
+    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "<code>⚠️ Already One Process going on! Wait for it to complete ⚠️</code>"
     
     HELP_MESSAGE = get_config(
         "STRINGS_HELP_MESSAGE",
-        "Hi, I am Video Compressor Bot \n\n1. Send me your telegram big video file \n2. Reply the file - /compress And Persentage \nEg: <code>/compress 50</code> \n\nSupport Group: @Linux_Repo"
+        "Hi, I am Video Compressor Bot \n\n1. Send me your telegram big video file \n2. Reply the file - /compress And Percentage \nEg: <code>/compress 50</code> \n\nReports bugs to @imjerin"
     )
     WRONG_MESSAGE = get_config(
         "STRINGS_WRONG_MESSAGE",
